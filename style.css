@@ -1,18 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Montserrat", sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  /* background: url('Images/hero.jpg') no-repeat center top;
-    background-size: cover; */
   background-color: #151513;
 }
 
@@ -25,7 +25,6 @@ header {
   align-items: center;
   padding: 1rem 5rem;
   z-index: 1000;
-  /* background: #000; */
 }
 
 #logo {
@@ -52,11 +51,11 @@ header nav ul li a:hover {
 }
 
 #header_btn {
-  padding: 1rem 2rem;
+  padding: 1rem;
   border: none;
   outline: none;
   border-radius: 2rem;
-  font-size: 1rem;
+  font-size: .8rem;
   background: #fff;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
@@ -92,13 +91,17 @@ header nav ul li a:hover {
   line-height: 1.6;
 }
 
+.hero_content p {
+  line-height: 1.6;
+}
+
 #contact_btn {
-  padding: 1rem 2rem;
+  padding: 1rem;
   border: none;
   outline: none;
   border-radius: 2rem;
   margin: 1.5rem 0.9rem 0;
-  font-size: 1rem;
+  font-size: .8rem;
   background: none;
   background: #fff;
   transition: all ease-in-out 0.2s;
@@ -106,11 +109,11 @@ header nav ul li a:hover {
 }
 
 #resume_btn {
-  padding: 1rem 2rem;
+  padding: 1rem;
   border: none;
   outline: none;
   border-radius: 2rem;
-  font-size: 1rem;
+  font-size: .8rem;
   background: none;
   border: 1px solid #fff;
   color: #fff;
@@ -128,19 +131,20 @@ button:active {
 /* Hero Section end */
 
 /* about_Section start */
-.about_title {
-  text-align: center;
-  color: #fff;
-  margin-top: 10rem;
-}
 .about_container {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: space-between;
   padding: 5rem 5rem;
   gap: 4rem;
+  display: flex;
 }
+
+.about_title {
+  text-align: center;
+  color: #fff;
+  margin: 0 auto; 
+}
+
 .about_img img {
   height: 450px;
   width: 350px;
@@ -149,37 +153,39 @@ button:active {
 }
 
 .about_content {
-    color: #fff;
+  color: #fff;
 }
+
 .about_content p {
-    line-height: 1.3;
-    margin-bottom: 4rem;
+  line-height: 1.3;
+  margin-bottom: 4rem;
 }
 
 .progress-container {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .progress-text {
-    width: 5.7rem;
-    font-size: 16px; 
-    color: #fff; 
-    flex-shrink: 0; 
+  width: 5.7rem;
+  font-size: 16px; 
+  color: #fff; 
+  flex-shrink: 0; 
 }
 
 .progress-bar-container {
-    flex: 1;
-    background-color: #e0e0e0; 
-    border-radius: 25px; 
-    overflow: hidden; 
+  flex: 1;
+  background-color: #e0e0e0; 
+  border-radius: 25px; 
+  overflow: hidden; 
 }
 
 .progress-bar {
-    height: 7px; 
-    background-color: #4caf50; 
-    border-radius: 24px; 
+  height: 7px; 
+  background-color: #4caf50; 
+  border-radius: 24px; 
 }
+
 /* about_Section end */
