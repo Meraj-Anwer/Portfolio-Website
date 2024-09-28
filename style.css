@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-}
-html {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
+
 body {
-  /* background: url('Images/hero.jpg') no-repeat center top;
-    background-size: cover; */
   background-color: #151513;
 }
 
@@ -23,9 +22,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem;
-  z-index: 1000;
-  /* background: #000; */
+  padding: 0 5rem;
+  height: 5rem;
+  background-color: rgb(75, 74, 74);
 }
 
 #logo {
@@ -33,6 +32,15 @@ header {
   color: #fff;
 }
 
+#bar {
+  display: none;
+  font-size: 1.8rem;
+  transition: 0.3s;
+  color: #fff;
+}
+#bar:hover {
+  scale: 1.1;
+}
 nav ul {
   list-style-type: none;
   display: flex;
@@ -52,11 +60,11 @@ header nav ul li a:hover {
 }
 
 #header_btn {
-  padding: 1rem 2rem;
+  padding: 1rem;
   border: none;
   outline: none;
   border-radius: 2rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   background: #fff;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
@@ -92,13 +100,17 @@ header nav ul li a:hover {
   line-height: 1.6;
 }
 
+.hero_content p {
+  line-height: 1.6;
+}
+
 #contact_btn {
-  padding: 1rem 2rem;
+  padding: 1rem;
   border: none;
   outline: none;
   border-radius: 2rem;
   margin: 1.5rem 0.9rem 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
   background: none;
   background: #fff;
   transition: all ease-in-out 0.2s;
@@ -106,11 +118,11 @@ header nav ul li a:hover {
 }
 
 #resume_btn {
-  padding: 1rem 2rem;
+  padding: 1rem;
   border: none;
   outline: none;
   border-radius: 2rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   background: none;
   border: 1px solid #fff;
   color: #fff;
@@ -128,58 +140,142 @@ button:active {
 /* Hero Section end */
 
 /* about_Section start */
+#about {
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about_title {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.about_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
 .about_title {
   text-align: center;
   color: #fff;
-  margin-top: 10rem;
+  margin: 0 auto;
 }
-.about_container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  padding: 5rem 5rem;
-  gap: 4rem;
-}
+
 .about_img img {
-  height: 450px;
-  width: 350px;
+  height: 380px;
+  width: 280px;
   border-radius: 1rem;
   object-fit: cover;
 }
 
 .about_content {
-    color: #fff;
+  color: #fff;
 }
+
 .about_content p {
-    line-height: 1.3;
-    margin-bottom: 4rem;
+  line-height: 1.3;
+  margin-bottom: 3rem;
 }
 
 .progress-container {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .progress-text {
-    width: 5.7rem;
-    font-size: 16px; 
-    color: #fff; 
-    flex-shrink: 0; 
+  width: 5.7rem;
+  font-size: 16px;
+  color: #fff;
+  flex-shrink: 0;
 }
 
 .progress-bar-container {
-    flex: 1;
-    background-color: #e0e0e0; 
-    border-radius: 25px; 
-    overflow: hidden; 
+  flex: 1;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .progress-bar {
-    height: 7px; 
-    background-color: #4caf50; 
-    border-radius: 24px; 
+  height: 7px;
+  background-color: #4caf50;
+  border-radius: 24px;
 }
+
 /* about_Section end */
+
+/* Responsice start */
+@media (max-width: 768px) {
+  .nav_btn {
+    display: none;
+  }
+
+  #bar {
+    display: block;
+  }
+
+  header {
+    padding: 0 2rem;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(75, 74, 74);
+    width: 100%;
+    display: none;
+    border-top: 1px solid black;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    padding: 1rem 3%;
+  }
+
+  #header_btn {
+    display: none;
+  }
+
+  #hero {
+    padding: 0 3rem;
+  }
+
+  #about {
+    padding: 3.5rem 3rem;
+    height: auto;
+  }
+
+  .about_container {
+    flex-direction: column-reverse; /* This moves the image to the bottom */
+    gap: 2rem;
+    width: 100%;
+    text-align: justify;
+  }
+
+  .about_img {
+    width: 100%;
+    height: 100%;
+  }
+  .about_img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Responsive end */

@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Meraj Anwer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
   </head>
   <body>
     <!-- Navigation start -->
     <header>
       <a href="#" id="logo">Portfolio</a>
+      <i class="fa-solid fa-bars-staggered" id="bar"></i>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -28,7 +30,7 @@
       <div class="hero_content">
         <img src="Images/hero_img.jpg" alt="heroImage" id="hero_img" />
         <h2>I'm Meraj Anwer</h2>
-        <h4>frontend developer</h4>
+        <h4>Web Developer</h4>
         <p>
           I am a frontend developer from Karachi, Pakistan with 1 year of
           experience in multiple<br />
@@ -43,34 +45,37 @@
     <!-- hero_Section end -->
 
     <!-- about_Section start -->
-    <h1 class="about_title" id="about">About me</h1>
-    <div class="about_container">
-      <div class="about_img">
-        <img src="Images/hero_img.jpg" alt="" srcset="" />
+    <section id="about">
+      <h1 class="about_title">About me</h1>
+      <div class="about_container">
+        <div class="about_img">
+          <img src="Images/hero_img.jpg" alt="aboutImage"  />
+        </div>
+        <div class="about_content">
+          <p>
+            I am a experienced Frontend Developer with over a decade of
+            professional expertiese in the field. throughout my career, I have
+            had the privillege of Collabborating with prestigious organization,
+            contrubutin with their success and growth.<br /><br />My passion for
+            frontend development is not only reflected in my extensive
+            experience but also in the enthusiasm and dedication I bring to each
+            project.
+          </p>
+          <div class="progress-container">
+            <div class="progress-text">HTML & CSS</div>
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-text">JavaScript</div>
+            <div class="progress-bar" style="width: 50%"></div>
+          </div>
+          <div class="progress-container">
+            <div class="progress-text">React JS</div>
+            <div class="progress-bar" style="width: 20%"></div>
+          </div>
+        </div>
       </div>
-      <div class="about_content">
-        <p>
-          I am a experienced Frontend Developer with over a decade of
-          professional expertiese in the field. throughout my career, I have had
-          the privillege of Collabborating with prestigious organization,
-          contrubutin with their success and growth.<br /><br />My passion for
-          frontend development is not only reflected in my extensive experience
-          but also in the enthusiasm and dedication I bring to each project.
-        </p>
-        <div class="progress-container">
-          <div class="progress-text">HTML & CSS</div>
-          <div class="progress-bar" style="width: 80%"></div>
-        </div>
-        <div class="progress-container">
-          <div class="progress-text">JavaScript</div>
-          <div class="progress-bar" style="width: 50%"></div>
-        </div>
-        <div class="progress-container">
-          <div class="progress-text">React JS</div>
-          <div class="progress-bar" style="width: 20%"></div>
-        </div>
-      </div>
-    </div>
+    </section>
     <!-- about_Section end -->
     <script src="script.js"></script>
   </body>
