@@ -329,6 +329,8 @@ button:active {
   color: #666;
 }
 
+/* our_Project_Section end */
+
 /* contact_Form start */
 
 #contact {
@@ -440,6 +442,11 @@ button:active {
   color: #fff;
 }
 
+input::placeholder, 
+textarea::placeholder {
+  color: #000;
+}
+
 .form_group textarea {
   width: 100%;
   height: 8rem;
@@ -458,8 +465,75 @@ button:active {
   transition: all ease-in-out 0.2s;
   cursor: pointer;
 }
+
+/* footer_Start */
+
+footer {
+  width: 100%;
+  padding: 3rem 3rem;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_text {
+  width: 40%;
+  padding: 1rem;
+}
+
+.footer_text h1 {
+  font-size: 2.5rem;
+  padding: 0 0 1rem;
+  color: #fff;
+}
+
+.footer_text p {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.footer_subscribe {
+  display: flex;
+  gap: 1rem ;
+
+}
+.footer_subscribe input{
+  height: 3rem;
+  border-radius: 5rem;
+  background: #555555;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+
+.footer_subscribe button {
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  background: none;
+  color: #fff;
+  background: #4caf50;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.footer_license {
+  padding: 1rem;
+}
+
+.footer_license p {
+  font-size: 1rem;
+  color: #fff;
+}
+/* footer_End */
 /* contact_Form end */
-/* our_Project_Section end */
 
 /* Responsice start */
 @media (max-width: 768px) {
